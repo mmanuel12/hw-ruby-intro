@@ -10,8 +10,8 @@ def max_2_sum arr
   arr.max(2).reduce(0,:+)
 end
 
-def sum_to_n? arr, n
-  # YOUR CODE HERE
+def sum_to_n? (arr, n)
+  arr.combination(2).any? {|a,b| a + b == n}
 end
 
 # Part 2
