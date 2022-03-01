@@ -20,8 +20,18 @@ def hello(name)
   "Hello, #{name}"
 end
 
-def starts_with_consonant? s
-  # YOUR CODE HERE
+def starts_with_consonant? (s)
+  value = true
+  if s.start_with?("a","e","i","o","u","A","E","I","O","U")
+    value = false
+  end
+  if s.start_with?("!","@","#","$","%","^","&","*","(",")","-","+")
+    value = false
+  end
+  if s.length == 0
+    value = false
+  end
+  return value
 end
 
 def binary_multiple_of_4? s
