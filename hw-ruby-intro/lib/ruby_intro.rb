@@ -34,8 +34,8 @@ def starts_with_consonant? (s)
   return value
 end
 
-def binary_multiple_of_4? s
-  # YOUR CODE HERE
+def binary_multiple_of_4? (s)
+  
 end
 
 # Part 3
